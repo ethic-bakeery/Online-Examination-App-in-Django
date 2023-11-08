@@ -1,45 +1,37 @@
 Online Examination Platform
+Overview
 
-Welcome to the Online Examination Platform, a comprehensive web application designed to manage exams, courses, questions, and student performance. This platform offers distinct functionalities for administrators, teachers, and students, enhancing the overall learning and assessment experience.
-Features
+Sumit Kumar has created an online examination platform designed for administrators, teachers, and students. This platform simplifies course management, question creation, and exam administration.
+Functions
 Admin
 
-    Account Creation: To create an admin account, use the following command: py manage.py createsuperuser.
-    Dashboard: After logging in, admins can access an overview of the system, including the total number of students, teachers, courses, and questions.
-    User Management: Admins have full control over user accounts. They can view, update, and delete teacher and student accounts. Admins can also approve teacher accounts.
-    Course and Question Management: Admins can add, view, and delete courses/exams. They can add questions to specific courses, providing options, correct answers, and marks. Questions can also be viewed and deleted.
-    Student Performance: Admins can view student marks for each attempt of every exam.
-    Email Configuration: Admins can customize email settings in settings.py to facilitate communication with users.
+    Create and manage teacher and student accounts.
+    Dashboard provides an overview of system statistics.
+    Manage teachers, students, courses, exams, and questions.
+    Add, view, and delete questions associated with courses.
 
 Teacher
 
-    Job Application: Teachers can apply for positions within the system, with approval required from the admin for login access.
-    Dashboard: Upon login, teachers can see the total number of students, courses, and questions in the system.
-    Course and Question Management: Teachers can add, view, and delete courses/exams. They can add questions to respective courses, including options, correct answers, and marks. Questions can also be viewed and deleted.
+    Apply for teaching positions (admin approval required).
+    Dashboard displays information on students, courses, and questions.
+    Manage courses, exams, and questions associated with their subjects.
 
 Student
 
-    Account Creation: Students can create accounts without requiring admin approval.
-    Dashboard: After login, students can view available courses/exams and the total number of questions in the system.
-    Exam Participation: Students can attempt exams at any time, with no limits on the number of attempts. Exams consist of multiple-choice questions, each with 4 options and 1 correct answer.
-    Performance Tracking: Students can view marks for each attempt of every exam.
+    Easily create accounts without admin approval.
+    Access a dashboard showing available courses/exams and question counts.
+    Take exams with multiple-choice questions and view marks for each attempt.
 
 How to Run the Project
 
-    Python Installation: Ensure Python 3.7.6 is installed. During installation, select "Add to Path" for easier command execution.
-    Install Dependencies: Open the terminal and execute the following command to install project dependencies:
-    python -m pip install -r requirements.txt
+    Install Python 3.7.6 and required dependencies.
+    Execute necessary commands in the terminal to set up the project.
+    Access the platform via http://127.0.0.1:8000/ in your browser.
 
-Database Setup: Run the following commands to set up the database:
+Contact Us Page
 
-py manage.py makemigrations
-py manage.py migrate
+    Configure email settings in settings.py for the contact us page.
 
-Run the Server: Start the development server using the following
+Drawbacks/Loopholes
 
-    py manage.py runserver
-    Access the Application: Open your web browser and enter the following URL:
-    http://127.0.0.1:8000/
-
-Drawbacks
-Admins and teachers can add an unlimited number of questions to any course. However, when adding a course, admins must specify the total number of questions. This design choice may require further refinement based on specific project requirements.
+    No limitations on the number of questions that can be added to a course.
